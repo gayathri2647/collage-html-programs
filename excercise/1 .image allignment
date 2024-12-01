@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Image Alignments</title>
+    <style>
+      .left {
+        float: left;
+        margin: 5px;
+        width: 400px;
+      }
+      .right {
+        float: right;
+        margin: 5px;
+        width: 400px;
+      }
+      .center {
+        display: block;
+        margin: 5px auto;
+        width: 400px;
+      }
+          </style>
+  </head>
+  <body>
+    <h1>Image Alignment Exercise 1</h1>
+    <img
+      src="https://w0.peakpx.com/wallpaper/540/403/HD-wallpaper-radhakrishna-flash-graphy-radhakrishna-flash-graphy.jpg"
+      alt="Image of RADHESHYAM"
+      class="left"
+    />
+
+    <img
+      src="https://w0.peakpx.com/wallpaper/540/403/HD-wallpaper-radhakrishna-flash-graphy-radhakrishna-flash-graphy.jpg"
+      alt="Image of RADHESHYAM"
+      class="right"
+    />
+
+    <img
+      src="https://w0.peakpx.com/wallpaper/540/403/HD-wallpaper-radhakrishna-flash-graphy-radhakrishna-flash-graphy.jpg"
+      alt="Image of RADHESHYAM"
+      class="center"
+    />
+    </body>
+</html>
