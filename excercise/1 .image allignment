@@ -1,43 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-        <title>Image Alignments</title>
+    <title>Vertical Div Layout</title>
+    <h1></h1>
     <style>
-      .left {
-        float: left;
-        margin: 5px;
-        width: 400px;
+      .container {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        gap: 10px;
       }
-      .right {
-        float: right;
-        margin: 5px;
-        width: 400px;
+
+      .container.reverse {
+        flex-direction: row-reverse;
       }
-      .center {
-        display: block;
-        margin: 5px auto;
-        width: 400px;
+
+      .container.center {
+        justify-content: center;
       }
-          </style>
+
+      .container img {
+        width: 200px;
+        height: auto;
+      }
+
+      .container p {
+        flex: 1;
+        text-align: justify;
+      }
+    </style>
   </head>
   <body>
-    <h1>Image Alignment Exercise 1</h1>
-    <img
-      src="https://w0.peakpx.com/wallpaper/540/403/HD-wallpaper-radhakrishna-flash-graphy-radhakrishna-flash-graphy.jpg"
-      alt="Image of RADHESHYAM"
-      class="left"
-    />
-
-    <img
-      src="https://w0.peakpx.com/wallpaper/540/403/HD-wallpaper-radhakrishna-flash-graphy-radhakrishna-flash-graphy.jpg"
-      alt="Image of RADHESHYAM"
-      class="right"
-    />
-
-    <img
-      src="https://w0.peakpx.com/wallpaper/540/403/HD-wallpaper-radhakrishna-flash-graphy-radhakrishna-flash-graphy.jpg"
-      alt="Image of RADHESHYAM"
-      class="center"
-    />
-    </body>
+    <div class="container">
+      <img src="butterfly.jpg" alt="Image 1" />
+      <p>
+        This is a paragraph which is supposed to be on right side of the picture.
+      </p>
+    </div>
+    <div class="container">
+      <p>Text on the left</p>
+      <img src="butterfly.jpg" alt="Image 2" />
+      <p>and text of right side of the middle image.</p>
+    </div>
+    <div class="container">
+      <p>
+        Well, this is supposed to be on the left side of the image.
+      </p>
+      <img src="butterfly.jpg" alt="Image 3" />
+    </div>
+  </body>
 </html>
