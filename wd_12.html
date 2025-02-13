@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SLCS Admission Form</title>
+    <style>
+        body {
+            background-color: rgba(255, 255, 255, 0.89);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 1px;
+            padding: 1px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 25%;
+            font-weight: bold;
+            padding: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 70%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="radio"], .form-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .submit-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .section-title {
+            background: #f4f4f4;
+            padding: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+            border-radius: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkl2Ym_YrmLF2WMuyeDvcktWkAznECS7uWpA&s" alt="SLCS Logo" width="300px">
+    </h1>
+    <h1>SUBBALAKSHMI LAKSHMIPATHY COLLEGE OF SCIENCE</h1>
+    <h2>MKU - MADURAI 625022</h2>
+
+    <div class="container">
+        <form>
+            
+            <div class="section-title">PERSONAL DETAILS</div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile No:</label>
+                <input type="number" id="mobile" placeholder="Enter number" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter Age" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Not prefer to say"> Prefer not to say
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="abc123@gmail.com" required>
+            </div>
+
+            <div class="section-title">CONTACT INFORMATION</div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city">
+            </div>
+            <div class="form-group">
+                <label for="pincode">Pincode:</label>
+                <input type="number" id="pincode">
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state">
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country">
+            </div>
+
+            <div class="section-title">PARENT DETAILS</div>
+            <div class="form-group">
+                <label for="father">Father's Name:</label>
+                <input type="text" id="father">
+            </div>
+            <div class="form-group">
+                <label for="mother">Mother's Name:</label>
+                <input type="text" id="mother">
+            </div>
+            <div class="form-group">
+                <label for="f_mobile">Father's Mobile No:</label>
+                <input type="number" id="f_mobile">
+            </div>
+            <div class="form-group">
+                <label for="m_mobile">Mother's Mobile No:</label>
+                <input type="number" id="m_mobile">
+            </div>
+
+            <div class="section-title">ACADEMICS</div>
+            <div class="form-group">
+                <label for="reg10">10th Register No:</label>
+                <input type="number" id="reg10">
+            </div>
+            <div class="form-group">
+                <label>10th Board:</label>
+                <input type="radio" name="board10" value="CBSE"> CBSE
+                <input type="radio" name="board10" value="ICSE"> ICSE
+                <input type="radio" name="board10" value="STATEBOARD"> STATEBOARD
+            </div>
+            <div class="form-group">
+                <label for="reg12">12th Register No:</label>
+                <input type="number" id="reg12">
+            </div>
+            <div class="form-group">
+                <label>12th Board:</label>
+                <input type="radio" name="board12" value="CBSE"> CBSE
+                <input type="radio" name="board12" value="ICSE"> ICSE
+                <input type="radio" name="board12" value="STATEBOARD"> STATEBOARD
+            </div>
+
+            <div class="section-title">ADDITIONAL DETAILS</div>
+            <div class="form-group">
+                <label>How did you know about this college?</label>
+                <input type="checkbox" name="info" value="Social Media"> Social Media
+                <input type="checkbox" name="info" value="Peer Mates"> Peer Mates
+                <input type="checkbox" name="info" value="Newspaper"> Newspaper
+            </div>
+            <div class="form-group">
+                <label>Favorite Coding Language:</label>
+                <input type="checkbox" name="lang" value="Python"> Python
+                <input type="checkbox" name="lang" value="C"> C
+                <input type="checkbox" name="lang" value="C++"> C++
+                <input type="checkbox" name="lang" value="HTML"> HTML
+            </div>
+
+            <div class="submit-btn">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+
+    <p align="center">VISIT OUR WEBSITE: <a href="https://slcs.edu.in/" target="_blank">Subbalakshmi Lakshmipathy College Of Science</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ar-juuGDFDE?si=aJJAcrtpPQ5bXmjY" title="YouTube video player" frameborder="0" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+    <div class="center">
+        <center><h3>ABOUT US</h3></center>
+        <p> To provide comprehensive Career Oriented Programmes with a rewarding learning experience and strong ethical values to bring about a transformative impact in our graduates to enable them to succeed as Globally Responsible Citizens.</p>
+        
+        <p><b>QUALITY POLICY:</b> We at SLCS dedicate ourselves to providing quality education and training that meet National and International standards to our stakeholders.</p>
+    </div>
+
+</body>
+</html>
